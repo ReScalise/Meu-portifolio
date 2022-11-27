@@ -1,4 +1,4 @@
-/*
+/* 
 
     OBJETIVO - quando clicarmos na aba temos que mostrar o conteúdo da aba que foi clicada pelo usuário e esconder o conteúdo da aba anterior
 
@@ -19,9 +19,8 @@
 // passo 1 - dar um jeito de pegar os elementos que representam as abas no HTML
 const abas = document.querySelectorAll(".aba");
 
-
-// passo 2 - dar um jeito de identificar o clique no elemento da aba
 abas.forEach(aba => {
+    // passo 2 - dar um jeito de identificar o clique no elemento da aba
     aba.addEventListener("click", function() {
 
         if(aba.classList.contains("selecionado")){
